@@ -61,8 +61,8 @@ Image retention occurs because BFI enhances motion clarity by inserting black fr
 - Screen Conditioning: If you have a more persistent case of Image Retention, you can force a refresh by doing the following:
   - Download the stuck_pixels.mb.gba GBA rom from this repo and store on your RG34XX.
   - Run this GBA ROM, and follow the on screen instructions, the screen will start flashing different colors.
-  - Open the RetroArch menu, enable the LCD3x shader, then turn BFI off, Sync to Exact Content Framerate to and Audio Sync off.
+  - Open the RetroArch menu, enable the LCD3x shader, then turn BFI off, Sync to Exact Content Framerate to off and Audio Sync off.
   - Leave for 30 minutes.
-  - The screen will now be cleared up.
+  - The screen will now be cleared up. You can close the ROM and revert your settings back to normal.
 
 By taking these steps, you can enjoy the benefits of BFI on 120Hz screens without worrying about prolonged image retention.
