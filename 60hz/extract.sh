@@ -1,9 +1,9 @@
 #!/bin/bash
 
 UBOOT_OFFSET="0x800"
-MONITOR_OFFSET="0x100800"
-P1_OFFSET="0x11ac00"
-SUNXI_OFFSET="0x11b800"
+MONITOR_OFFSET="0x101000"
+P1_OFFSET="0x11b400"
+SUNXI_OFFSET="0x11c000"
 
 echo "Extracting stock_boot_package contents..."
 dd if=stock_boot_package.fex of=u-boot.fex skip=$(($UBOOT_OFFSET)) count=$(($MONITOR_OFFSET)) bs=1
