@@ -1,7 +1,7 @@
-# rgxx_boot_package_mods
+# rgxx_boot_package_mods - RG 35XX SP
 
 Big thank you for acmeplus in help steering me in the right direction on boot_package signing.
-To update your disk image with this mod, overwrite the disk image from 0x1004000 with the contents of boot_package.fex (119.947Hz or 60.006Hz mod).
+To update your disk image with this mod, overwrite the disk image from 0x1004000 with the contents of boot_package.fex (119.953Hz or 59.977Hz mod).
 
 stock_boot_package.fex included in case you want to revert any changes.
 
@@ -23,29 +23,29 @@ stock_boot_package.fex included in case you want to revert any changes.
 
 # Timings
 
-60.006Hz:
+59.977Hz:
 ```
-lcd_dclk_freq = <54>;
-lcd_ht = <1679>;
-lcd_vt = <536>;
+lcd_dclk_freq = <48>;
+lcd_ht = <1414>;
+lcd_vt = <566>;
 ```
 
-119.947Hz:
+119.953Hz:
 ```
-lcd_dclk_freq = <54>;
-lcd_ht = <840>;
-lcd_vt = <536>;
+lcd_dclk_freq = <48>;
+lcd_ht = <707>;
+lcd_vt = <566>;
 ```
 
 Stock:
 ```
-lcd_dclk_freq = <26>;
-lcd_ht = <820>;
-lcd_vt = <536>;
+lcd_dclk_freq = <25>;
+lcd_ht = <728>;
+lcd_vt = <568>;
 ```
 
-My personal finding is that the kernel is actually ignoring the stock 26Mhz clock and falls back to a higher clock anyway. 
-54Mhz seems to be inline with accurate timing calculations, anything lower than this and the timing calculation and actual refresh rate don't match.
+My personal finding is that the kernel is actually ignoring the stock 25Mhz clock and falls back to a higher clock anyway. 
+48Mhz seems to be inline with accurate timing calculations, anything lower than this and the timing calculation and actual refresh rate don't match.
 
 ------
 
@@ -59,7 +59,7 @@ Image retention occurs because BFI enhances motion clarity by inserting black fr
 **How to Address Image Retention**
 - Allow Recovery Time: Image retention typically fades on its own after displaying dynamic or neutral content for a short time. Simply turn off BFI and play your games as normal
 - Screen Conditioning: If you have a more persistent case of Image Retention, you can force a refresh by doing the following:
-  - Download the stuck_pixels.mb.gba GBA rom from this repo and store on your RG34XX.
+  - Download the stuck_pixels.mb.gba GBA rom from this repo and store on your RG XX.
   - Run this GBA ROM, and follow the on screen instructions, the screen will start flashing different colors.
   - Open the RetroArch menu, enable the LCD3x shader, then turn BFI off, Sync to Exact Content Framerate to off and Audio Sync off.
   - Leave for 30 minutes.
