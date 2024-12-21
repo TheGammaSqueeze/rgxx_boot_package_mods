@@ -11,9 +11,11 @@ I've now added a flashscript zip file to this repo to allow easy flashing of the
 I am not responsible for if this does not work on any CFW, these have been tested on Stock firmware. 
 
 Extract the contents of the flashscript folder into your Ports folder, then execute the scripts directly from your ports menu.
-Ensure you take a backup of your existing data, use the RG**XX_BACKUP_boot_package.sh script to do this, then proceed to flash either the fixed 60Hz patch or 120Hz patch, your device will reboot automatically when this is done.
+Ensure you take a backup of your existing data, use the RG**XX_BACKUP_boot_package.sh script to do this. 
 
-RG**XX_RESTORE_boot_package.sh will restore your initial backup.
+Then proceed to flash either the fixed 60Hz patch or 120Hz patch, this will take up to 1 minute (will just show a loading screen during this time), your device will reboot automatically when this is done.
+
+RG**XX_RESTORE_boot_package.sh will restore your initial backup and reboot.
 
 ------
 # 119.947Hz mod works best with these settings:
@@ -22,11 +24,7 @@ RG**XX_RESTORE_boot_package.sh will restore your initial backup.
 ![image](https://github.com/user-attachments/assets/ba50afef-5217-4ed5-a906-10bf240b6877)
 ![image](https://github.com/user-attachments/assets/3ab3ca08-138e-4362-8310-26bc1cdf4f3d)
 
-**Normal (option 1) (would prefer VSync Swap Interval = 2, but this is broken on Anbernic stock build) (Enable Shaders, use the misc/image-adjustment shader):**
-![image](https://github.com/user-attachments/assets/4c097a34-93dd-492d-8c74-50d6d761c2e8)
-![image](https://github.com/user-attachments/assets/fd71fb52-c5c5-479f-b4d4-e318a2d034aa)
-
-**Normal (option 2) (no shader needed, set Sync to Exact Content Framerate to ON)**
+**Normal (set Sync to Exact Content Framerate to ON, use a shader like interpolation/pixellate if this is not smooth enough)**
 ![image](https://github.com/user-attachments/assets/53d7f613-1552-4448-8c6d-8e31cc438558)
 
 -------
