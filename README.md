@@ -20,7 +20,7 @@ RG**XX_RESTORE_boot_package.sh will restore your initial backup and reboot.
 ------
 # 119.947Hz mod works best with these settings:
 
-**BFI (turn screen off for 30 seconds after the device boots, before using BFI):**
+**BFI (turn screen off for 30 seconds after the device boots, before using BFI, make sure your CPU governor is set to Performance):**
 ![image](https://github.com/user-attachments/assets/ba50afef-5217-4ed5-a906-10bf240b6877)
 ![image](https://github.com/user-attachments/assets/3ab3ca08-138e-4362-8310-26bc1cdf4f3d)
 
