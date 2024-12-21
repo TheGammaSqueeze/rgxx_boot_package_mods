@@ -6,6 +6,16 @@ To update your disk image with this mod, overwrite the disk image from 0x1004000
 stock_boot_package.fex included in case you want to revert any changes.
 
 ------
+# Flashing
+I've now added a flashscript zip file to this repo to allow easy flashing of these mods.
+I am not responsible for if this does not work on any CFW, these have been tested on Stock firmware. 
+
+Extract the contents of the flashscript folder into your Ports folder, then execute the scripts directly from your ports menu.
+Ensure you take a backup of your existing data, use the RG**XX_BACKUP_boot_package.sh script to do this, then proceed to flash either the fixed 60Hz patch or 120Hz patch, your device will reboot automatically when this is done.
+
+RG**XX_RESTORE_boot_package.sh will restore your initial backup.
+
+------
 # 119.947Hz mod works best with these settings:
 
 **BFI (turn screen off for 30 seconds after the device boots, before using BFI):**
