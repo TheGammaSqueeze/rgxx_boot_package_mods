@@ -1,7 +1,7 @@
 # rgxx_boot_package_mods - RG 34XX SP
 
 Big thank you for acmeplus in help steering me in the right direction on boot_package signing.
-To update your disk image with this mod, overwrite the disk image from 0x1004000 with the contents of boot_package.fex (119.947Hz or 60.006Hz mod).
+To update your disk image with this mod, overwrite the disk image from 0x1004000 with the contents of boot_package.fex (119.947Hz or 60.01Hz mod).
 
 stock_boot_package.fex included in case you want to revert any changes.
 
@@ -31,10 +31,10 @@ RG**XX_RESTORE_boot_package.sh will restore your initial backup and reboot.
 
 # Timings
 
-60.006Hz:
+60.01Hz:
 ```
-lcd_dclk_freq = <54>;
-lcd_ht = <1679>;
+lcd_dclk_freq = <26>;
+lcd_ht = <814>;
 lcd_vt = <536>;
 ```
 
